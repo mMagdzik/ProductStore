@@ -19,5 +19,5 @@ const productSchema = new mongoose.Schema({
                         //updatedAt – kiedy dokument był ostatnio zmieniony
 });
 
-const Product = mongoose.model('Prosuct', productSchema);
+const Product = mongoose.model('Product', productSchema);
 export default Product;
