@@ -1,9 +1,8 @@
 //const express = require('express');  "type": "module" insted of commonjs
-import express from 'express';
+import express, { json } from 'express';
 import dotenv from 'dotenv';
 import { connectDB } from './config/db.js';
 import Product from "./models/product.model.js"
-
 
 dotenv.config();
 const app = express();
@@ -37,8 +36,17 @@ app.post("/api/products", async(req, res) => {
     }
 });
 
-console.log(process.env.MONGO_URL);
-
+app.put("/api/products/:id", async(req, res) => {
+    const { id } = req.params;
+    const product = req.body;
+    
+    try {
+        const updatedProduct = await Product.findByIdAndUpdate(id, product, { new: true });
+        res.status(200).json({ success: true, data: updatedProduct });
+    }   catch {
+        res.status(500).json({ success: false, message: "server error" })
+    }
+})
 
 app.delete("/api/products/:id", async (req, res) => {
     const { id } = req.params;
