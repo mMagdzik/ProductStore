@@ -28,8 +28,18 @@ app.post("/api/products", async(req, res) => {
 
 console.log(process.env.MONGO_URL);
 
+
+app.delete("/api/products/:id", async (req, res) => {
+    const { id } = req.params;
+    try {
+        await Product.findByIdAndDelete(id);
+    } catch ( error ) {
+
+    }
+})
+
 app.listen(3000, () => {
     connectDB();
-    console.log("server Started at 5000");
+    console.log("server Started at 3000");
 })
 
