@@ -3,8 +3,7 @@ import { Container,
   Flex, 
   Text, 
   Button, 
-  useColorMode, 
-  useColorModeValue} 
+  useColorMode } 
 from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { CiSquarePlus } from "react-icons/ci";
@@ -20,7 +19,6 @@ const Navbar = () => {
     <Container 
       maxW="1140px" 
       px={4}
-      bg={useColorModeValue("gray.100", "gray.900")}
     >
       <Flex
         h={16}
