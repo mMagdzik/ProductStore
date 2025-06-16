@@ -1,5 +1,6 @@
 import { Container, HStack, Flex, Text, Button } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
+import { CiSquarePlus } from "react-icons/ci";
 
 const Navbar = () => {
   return (
@@ -26,7 +27,7 @@ const Navbar = () => {
         <HStack spacing={2} alignItems={"center"}>
           <Link to={"/create"}>
             <Button>
-              
+              <CiSquarePlus />
             </Button>
           </Link>
         </HStack>
