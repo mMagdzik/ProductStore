@@ -9,11 +9,9 @@ import { Link } from "react-router-dom";
 import { CiSquarePlus } from "react-icons/ci";
 import { IoIosMoon, IoMdSunny  } from "react-icons/io";
 
-
 const Navbar = () => {
 
   const { colorMode, toggleColorMode } = useColorMode()
-
 
   return (
     <Container 
