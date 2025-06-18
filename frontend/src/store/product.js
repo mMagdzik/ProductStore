@@ -26,5 +26,16 @@ export const useProductStore = create((set) => ({
     const data = await res.json();
     set({ products: data.data });
   },
-  //SENDING REQUEST TO ENDPOINT to grab products
+  deleteProduct: async (pid) => {
+    const res = await fetch(`/api/products/${pid}`, {
+      method: "DELETE",
+    });
+    const data = await res.json();
+    if (!data.success) return { success: false, message: data.message };
+
+    set((state) => ({
+      products: state.products.filter((product) => product._id !== pid),
+    })); //update state ._id key in .map
+    return { success: true, message: data.message };
+  },
 }));
