@@ -5,10 +5,13 @@ import {
   Text,
   HStack,
   IconButton,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import { EditIcon, DeleteIcon } from "@chakra-ui/icons";
 
 const ProductCard = ({ product }) => {
+  const textColor = useColorModeValue("gray.600");
+
   return (
     <Box
       shadow="lg"
@@ -28,7 +31,7 @@ const ProductCard = ({ product }) => {
         <Heading as="h3" size="md" mb={2}>
           {product.name}
         </Heading>
-        <Text fontWeight="bold" fontSize="xl" mb={4}>
+        <Text fontWeight="bold" fontSize="xl" mb={4} color={textColor}>
           $ {product.price}
         </Text>
         <HStack>
