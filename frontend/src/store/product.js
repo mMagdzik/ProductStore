@@ -22,9 +22,9 @@ export const useProductStore = create((set) => ({
     return { success: true, message: "Product crerated successfully" };
   },
   fetchProducts: async () => {
-    const res = await fetch("/api/product/");
+    const res = await fetch("/api/products");
     const data = await res.json();
     set({ products: data.data });
   },
-  //Method GET. SENDING REQUEST TO ENDPOINT to grab products
+  //SENDING REQUEST TO ENDPOINT to grab products
 }));
