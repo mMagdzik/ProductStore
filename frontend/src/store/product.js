@@ -14,9 +14,9 @@ export const useProductStore = create((set) => ({
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(newProduct),
+      body: JSON.stringify(newProduct), //zamienia obiekt na string w formacie json
     });
-    const data = await res.json();  //zamiana odp na obiekt
+    const data = await res.json(); //zamiana odp. JSON na obiekt - parse
     set((state) => ({ products: [...state.products, data.data] }));
 
     return { success: true, message: "Product crerated successfully" };

@@ -1,5 +1,4 @@
-import { Container, VStack, Text } from "@chakra-ui/react";
-import { SimpleGrid } from "@chakra-ui/react";
+import { Container, VStack, Text, SimpleGrid } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
 const HomePage = () => {
@@ -16,6 +15,13 @@ const HomePage = () => {
         >
           Current Products 🚀
         </Text>
+        <SimpleGrid
+          columns={{
+            base: 1,
+            md: 2,
+            lg: 3,
+          }}
+        ></SimpleGrid>
         <Text
           fontSize="xl"
           textAlign={"center"}
@@ -33,7 +39,6 @@ const HomePage = () => {
             </Text>
           </Link>
         </Text>
-        <SimpleGrid></SimpleGrid>
       </VStack>
     </Container>
   );
