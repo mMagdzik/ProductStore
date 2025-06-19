@@ -18,8 +18,7 @@ Built with:
   <img src="https://img.icons8.com/color/48/000000/mongodb.png" alt="MongoDB" width="80"/>&nbsp;&nbsp;
   <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman" width="80"/>&nbsp;&nbsp;
   <img src="https://vitejs.dev/logo.svg" alt="Vite" width="80"/>&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/pmndrs/zustand@main/resources/zustand-bear.svg" alt="Zustand Bear" width="80"/>&nbsp;&nbsp;
-  <img src="frontend/public/zustand.png" alt="Zustand" width="80"/>&nbsp;&nbsp;
+  <img src="frontend/public/zustand.png" alt="Zustand" width="120"/>&nbsp;&nbsp;
 
 </p>
 
