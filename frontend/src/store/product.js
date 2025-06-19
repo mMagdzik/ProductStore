@@ -47,5 +47,13 @@ export const useProductStore = create((set) => ({
       },
       body: JSON.stringify(updatedProduct),
     });
+    const data = await res.json();
+    if (!data.success) return { return: false, message: data.message };
+    //updating the UI without needing a refresh
+    set((state) => ({
+      products: state.products.map((product) =>
+        product._id === pid ? data.data : product
+      ),
+    }));
   },
 }));
