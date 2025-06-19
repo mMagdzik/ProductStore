@@ -6,6 +6,22 @@ _“100 Hours Web Development Bootcamp - Build 23 React Projects”_ 🎓
 
 ---
 
+## 🔧 Tech Stack
+
+Built with:
+
+<p align="center">
+  <img src="https://img.icons8.com/color/48/000000/react-native.png" alt="React" width="80"/>&nbsp;&nbsp;
+  <img src="https://img.icons8.com/color/48/000000/chakra-ui.png" alt="Chakra UI" width="80"/>&nbsp;&nbsp;
+  <img src="https://img.icons8.com/color/48/000000/nodejs.png" alt="Node.js" width="80"/>&nbsp;&nbsp;
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="Express" width="80"/>&nbsp;&nbsp;
+  <img src="https://img.icons8.com/color/48/000000/mongodb.png" alt="MongoDB" width="80"/>&nbsp;&nbsp;
+  <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman" width="80"/>
+  <img src="https://vitejs.dev/logo.svg" alt="Vite" width="80"/>
+  <img src="https://raw.githubusercontent.com/pmndrs/zustand/main/resources/zustand-bear.svg" alt="Zustand Bear" width="80"/>
+
+</p>
+
 ## 💡 About the App
 
 This is a **Product Store** where you can:
@@ -19,16 +35,3 @@ Everything is stored securely in a **MongoDB** database 💾 using full **CRUD**
 I also made sure the app is **fully responsive** 📱💻.
 
 ---
-
-## 🔧 Tech Stack
-
-Built with:
-
-<p align="left">
-  <img src="https://img.icons8.com/color/48/000000/react-native.png" alt="React" width="40"/>
-  <img src="https://img.icons8.com/color/48/000000/chakra-ui.png" alt="Chakra UI" width="40"/>
-  <img src="https://img.icons8.com/color/48/000000/nodejs.png" alt="Node.js" width="40"/>
-  <img src="https://img.icons8.com/ios-filled/50/000000/express-js.png" alt="Express" width="40"/>
-  <img src="https://img.icons8.com/color/48/000000/mongodb.png" alt="MongoDB" width="40"/>
-  <img src="https://img.icons8.com/ios-filled/50/000000/api-settings.png" alt="Postman" width="40"/>
-</p>
