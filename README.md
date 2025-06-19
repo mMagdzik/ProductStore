@@ -1,4 +1,4 @@
-# 🛍️ Product Store App — Full Stack MERN Project
+# <h1 align="center">🛒 Product Store App — Full Stack MERN Project </h1>
 
 Hi there! 👋  
 This is my **first full stack MERN** application built as part of the Udemy course by **Burak Orkmez**:  
@@ -16,9 +16,9 @@ Built with:
   <img src="https://img.icons8.com/color/48/000000/nodejs.png" alt="Node.js" width="80"/>&nbsp;&nbsp;
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="Express" width="80"/>&nbsp;&nbsp;
   <img src="https://img.icons8.com/color/48/000000/mongodb.png" alt="MongoDB" width="80"/>&nbsp;&nbsp;
-  <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman" width="80"/>
-  <img src="https://vitejs.dev/logo.svg" alt="Vite" width="80"/>
-  <img src="https://raw.githubusercontent.com/pmndrs/zustand/main/resources/zustand-bear.svg" alt="Zustand Bear" width="80"/>
+  <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman" width="80"/>&nbsp;&nbsp;
+  <img src="https://vitejs.dev/logo.svg" alt="Vite" width="80"/>&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/pmndrs/zustand@main/resources/zustand-bear.svg" alt="Zustand Bear" width="80"/>&nbsp;&nbsp;
 
 </p>
 
