@@ -7,15 +7,32 @@ import {
   IconButton,
   useColorModeValue,
   useToast,
+  VStack,
+  Input,
+  Button,
 } from "@chakra-ui/react";
 import { EditIcon, DeleteIcon } from "@chakra-ui/icons";
 import { useProductStore } from "../store/product";
+import {
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
+  useDisclosure,
+} from "@chakra-ui/react";
+import { useState } from "react";
 
 const ProductCard = ({ product }) => {
+  const [updatedProduct, setUpdatedProduct] = useState(product);
   const textColor = useColorModeValue("gray.600", "gray.200");
   const bg = useColorModeValue("white", "gray.800");
   const { deleteProduct } = useProductStore();
+
   const toast = useToast();
+  const { isOpen, onOpen, onClose } = useDisclosure();
 
   const handleDeleteProduct = async (pid) => {
     const { success, message } = await deleteProduct(pid);
@@ -61,7 +78,11 @@ const ProductCard = ({ product }) => {
           $ {product.price}
         </Text>
         <HStack>
-          <IconButton icon={<EditIcon />} colorScheme="purple" />
+          <IconButton
+            icon={<EditIcon />}
+            colorScheme="purple"
+            onClick={onOpen}
+          />
           <IconButton
             icon={<DeleteIcon />}
             colorScheme="red"
@@ -69,6 +90,36 @@ const ProductCard = ({ product }) => {
           />
         </HStack>
       </Box>
+      <Modal isOpen={isOpen} onClose={onClose}>
+        <ModalOverlay />
+        <ModalContent>
+          <ModalHeader>Update Product</ModalHeader>
+          <ModalCloseButton />
+          <ModalBody>
+            <VStack spacing={4}>
+              <Input
+                placeholder="Product Name"
+                type="name"
+                value={updatedProduct.name}
+              />
+              <Input
+                placeholder="Product Price"
+                type="number"
+                value={updatedProduct.price}
+              />
+              <Input placeholder="Image URL" value={updatedProduct.image} />
+            </VStack>
+          </ModalBody>
+          <ModalFooter>
+            <Button colorScheme="blue" mr={4}>
+              Update
+            </Button>
+            <Button variant="ghost" onClick={onClose}>
+              Cancel
+            </Button>
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
     </Box>
   );
 };

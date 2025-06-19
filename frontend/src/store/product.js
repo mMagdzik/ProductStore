@@ -39,4 +39,13 @@ export const useProductStore = create((set) => ({
     })); //update state ._id key in .map
     return { success: true, message: data.message };
   },
+  updateProduct: async (pid, updatedProduct) => {
+    const res = await fetch(`/api/products/${pid}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(updatedProduct),
+    });
+  },
 }));
