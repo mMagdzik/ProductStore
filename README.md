@@ -4,7 +4,7 @@
 
 <img src="frontend/public/screenShot.png" alt="screen" width="100%"/>
 
-## 🔧 Tech Stack
+## 🔧 Tech Stack:
 
 <p align="center">
   <img src="https://img.icons8.com/color/48/000000/react-native.png" alt="React" width="80"/>&nbsp;&nbsp;
@@ -15,7 +15,6 @@
   <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman" width="80"/>&nbsp;&nbsp;
   <img src="https://vitejs.dev/logo.svg" alt="Vite" width="80"/>&nbsp;&nbsp;
   <img src="frontend/public/zustand.png" alt="Zustand" width="120"/>&nbsp;&nbsp;
-
 </p>
 
 ## Features:
@@ -27,12 +26,14 @@
 - 💻 using full CRUD operations (Create, Read, Update, Delete),
 - 📱 I also made sure the app is fully responsive
 
-Directly in the interface you can:
+### Directly in the interface you can:
 
 - ➕ Create products
 - 📝 Update and edit them
 - ❌ Delete products
 - 🌙 Switch between **light** and **dark** mode
+
+---
 
 ### Setup .env file
 
