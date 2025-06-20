@@ -2,7 +2,7 @@
 
 <h2 align="center"> 💡About the App 💡 </h2>
 
-![Demo App](/frontend/public/screenshot.png)
+<img src="frontend/public/screenshot.png" alt="Zustand" width="100%"/>
 
 ## 🔧 Tech Stack
 
@@ -18,15 +18,6 @@
 
 </p>
 
----
-
-Directly in the interface you can:
-
-- ➕ Create products
-- 📝 Update and edit them
-- ❌ Delete products
-- 🌙 Switch between **light** and **dark** mode
-
 ## Features:
 
 - 🌐 Deployment
@@ -35,6 +26,15 @@ Directly in the interface you can:
 - 💾 Everything is stored securely in a MongoDB database
 - 💻 using full CRUD operations (Create, Read, Update, Delete),
 - 📱 I also made sure the app is fully responsive
+
+Directly in the interface you can:
+
+- ➕ Create products
+- 📝 Update and edit them
+- ❌ Delete products
+- 🌙 Switch between **light** and **dark** mode
+
+### Setup .env file
 
 ```shell
 MONGO_URI=your_mongo_uri
@@ -55,7 +55,7 @@ npm run start
 
 ---
 
-<div align="center">
-This was my **first full stack MERN** application built as part of the Udemy course by **Burak Orkmez**:  
-_“100 Hours Web Development Bootcamp - Build 23 React Projects”_  🎓
-</div>
+<p align="center">
+This full stack MERN application was built as part of the Udemy course by <strong>Burak Orkmez</strong>:  
+<em>“100 Hours Web Development Bootcamp - Build 23 React Projects”</em> 🎓
+</p>
