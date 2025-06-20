@@ -11,7 +11,13 @@ const PORT = process.env.PORT || 3000;
 
 //frontend folder as a static assets
 const __dirname = path.resolve();
-if (process.env.NODE_ENV === "production") app.use(express.json()); // middleware allows to accept JSON in req.body
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "/frontend/dist")));
+
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
+  });
+} // middleware allows to accept JSON in req.body
 
 app.use("/api/products", productRoutes);
 

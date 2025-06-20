@@ -1,6 +1,6 @@
 # <h1 align="center">🛒 Product Store App — Full Stack MERN Project </h1>
 
-<h2 align="center"> 💡 About the App 💡 </h2>
+<h2 align="center"> 💡About the App 💡 </h2>
 
 This is a **Product Store** app developed with **CRUD principles** — directly in the interface you can:
 
@@ -13,8 +13,6 @@ Everything is stored securely in a **MongoDB** database 💾 using full **CRUD**
 I also made sure the app is **fully responsive** 📱💻.
 
 ## 🔧 Tech Stack
-
-Built with:
 
 <p align="center">
   <img src="https://img.icons8.com/color/48/000000/react-native.png" alt="React" width="80"/>&nbsp;&nbsp;
