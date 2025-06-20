@@ -2,7 +2,7 @@
 
 <h2 align="center"> 💡About the App 💡 </h2>
 
-<img src="frontend/public/screenshot.png" alt="Zustand" width="100%"/>
+<img src="frontend/public/screenShot.png" alt="screen" width="100%"/>
 
 ## 🔧 Tech Stack
 
