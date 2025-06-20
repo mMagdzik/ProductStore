@@ -2,7 +2,7 @@
 
 <h2 align="center"> 💡About the App 💡 </h2>
 
----
+![Demo App](/frontend/public/screenshot.png)
 
 ## 🔧 Tech Stack
 
@@ -27,8 +27,14 @@ Directly in the interface you can:
 - ❌ Delete products
 - 🌙 Switch between **light** and **dark** mode
 
-Everything is stored securely in a MongoDB database 💾 using full CRUD operations (Create, Read, Update, Delete).
-I also made sure the app is fully responsive 📱💻.
+## Features:
+
+- 🌐 Deployment
+- 🔥 Build an API
+- 🐞 Error Handling
+- 💾 Everything is stored securely in a MongoDB database
+- 💻 using full CRUD operations (Create, Read, Update, Delete),
+- 📱 I also made sure the app is fully responsive
 
 ```shell
 MONGO_URI=your_mongo_uri
