@@ -2,15 +2,7 @@
 
 <h2 align="center"> 💡About the App 💡 </h2>
 
-This is a **Product Store** app developed with **CRUD principles** — directly in the interface you can:
-
-- ➕ Create products
-- 📝 Update and edit them
-- ❌ Delete products
-- 🌙 Switch between **light** and **dark** mode
-
-Everything is stored securely in a **MongoDB** database 💾 using full **CRUD** operations (Create, Read, Update, Delete).  
-I also made sure the app is **fully responsive** 📱💻.
+---
 
 ## 🔧 Tech Stack
 
@@ -28,5 +20,36 @@ I also made sure the app is **fully responsive** 📱💻.
 
 ---
 
+Directly in the interface you can:
+
+- ➕ Create products
+- 📝 Update and edit them
+- ❌ Delete products
+- 🌙 Switch between **light** and **dark** mode
+
+Everything is stored securely in a MongoDB database 💾 using full CRUD operations (Create, Read, Update, Delete).
+I also made sure the app is fully responsive 📱💻.
+
+```shell
+MONGO_URI=your_mongo_uri
+PORT=5000
+```
+
+### Run this app locally
+
+```shell
+npm run build
+```
+
+### Start the app
+
+```shell
+npm run start
+```
+
+---
+
+<div align="center">
 This was my **first full stack MERN** application built as part of the Udemy course by **Burak Orkmez**:  
-_“100 Hours Web Development Bootcamp - Build 23 React Projects”_ 🎓
+_“100 Hours Web Development Bootcamp - Build 23 React Projects”_  🎓
+</div>
